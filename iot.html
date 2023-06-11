@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Reporting System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%; /* Increase the width here */
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Additional styles for the filter section */
+    div.filter-section {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather Reporting System</h1>
+
+  <div class="filter-section">
+    <label for="filter-temperature">Filter by Temperature:</label>
+    <input type="text" id="filter-temperature">
+
+    <label for="filter-location">Filter by Location:</label>
+    <input type="text" id="filter-location">
+
+    <label for="filter-condition">Filter by Condition:</label>
+    <input type="text" id="filter-condition">
+
+    <button id="filter-button">Apply Filter</button>
+  </div>
+
+  <table id="weather-table">
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Temperature</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>New York</td>
+        <td>25°C</td>
+        <td>Sunny</td>
+      </tr>
+      <tr>
+        <td>London</td>
+        <td>20°C</td>
+        <td>Cloudy</td>
+      </tr>
+      <tr>
+        <td>Tokyo</td>
+        <td>30°C</td>
+        <td>Rainy</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
